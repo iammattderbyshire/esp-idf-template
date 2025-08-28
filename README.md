@@ -1,8 +1,10 @@
 # ESP-IDF template app
 
 How to build
+idf.py fullclean && idf.py build -DIDF_TARGET=esp32
 
-cd /Users/mattderbyshire/github\_/esp/new_esp_1/src && idf.py fullclean && idf.py build -DIDF_TARGET=esp32
+How to flash
+idf.py -p /dev/cu.usbserial-1120 flash monitor
 
 This is a template application to be used with [Espressif IoT Development Framework](https://github.com/espressif/esp-idf).
 
